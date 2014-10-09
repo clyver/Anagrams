@@ -8,7 +8,7 @@ class Anagram():
 	def __init__(self, input_list):
 		self.list = input_list
 		self.len = len(self.list)
-		slef.num_anagrams = 0
+		self.num_anagrams = 0
 	def algorithm():
 		"""
 		The meat of the class.
