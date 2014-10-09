@@ -23,6 +23,9 @@ class Anagram():
 			# Sort this element
 			elem = sorted(elem)
 	
+			# Remove this element from the list
+			self.list.pop(index)
+	
 			# We say an elem has not been matched until it is
 			matched = False		
 	
@@ -39,5 +42,5 @@ class Anagram():
 			# If this elem was matched, let's not forget to give it credit
 			if matched:
 				self.num_anagrams += 1
-			self.list.pop(index)
+	
 							
