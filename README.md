@@ -10,6 +10,6 @@ and q is the length of the longest string.  This is due to the fact
 that my heaviest opperation sorts the letters in a string, while
 itterating over all the strings.  I'm sure I can do better.  I'm
 particularly opposed to having create a copy list to do my comparisons.
-#TODO: Decrease O() time complexity   
+TODO: Decrease O() time complexity   
 
 
