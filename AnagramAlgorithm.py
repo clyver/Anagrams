@@ -14,30 +14,33 @@ class Anagram():
 		The meat of the class.
 		Go through the list's elements,
 		 and determine if anagrams are present
-		"""	
+		"""
+		# Create a copy so we don't corrupt our class field.
+		# This may come in handy as this project grows.	
+		our_list = self.list
 		
-		for elem in self.list:
+		for elem in our_list:
 			# Get the index of this element
-			index = self.list.index(elem)
+			index = our_list.index(elem)
 			
 			# Sort this element
 			elem = sorted(elem)
 	
 			# Remove this element from the list
-			self.list.pop(index)
+			our_list.pop(index)
 	
 			# We say an elem has not been matched until it is
 			matched = False		
 	
 			# Iterate over elements in search of anagram mathces	
-			for compare_elem in self.list:
+			for compare_elem in our_list:
 				# Two strings are anagrams if equal when sorted
 				if elem == sorted(compare_elem):
 					# If equal, add to count, pop from list
 					matched = True
 					self.num_anagrams += 1
-					index2 = self.list.index(compare_elem)
-					self.list.pop(index2)
+					index2 = our_list.index(compare_elem)
+					our_list.pop(index2)
 			
 			# If this elem was matched, let's not forget to give it credit
 			if matched:
