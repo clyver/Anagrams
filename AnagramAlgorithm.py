@@ -9,7 +9,7 @@ class Anagram():
 		self.list = input_list
 		self.len = len(self.list)
 		self.num_anagrams = 0
-	def algorithm():
+	def algorithm(self):
 		"""
 		The meat of the class.
 		Go through the list's elements,
@@ -34,7 +34,7 @@ class Anagram():
 					matched = True
 					self.num_anagrams += 1
 					index2 = self.list.index(compare_elem)
-					self.list.pop(compare_index2)
+					self.list.pop(index2)
 			
 			# If this elem was matched, let's not forget to give it credit
 			if matched:
