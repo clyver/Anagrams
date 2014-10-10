@@ -1,4 +1,4 @@
-from AnagramAlgorithm import Anagram
+from anagramAlgorithm import Anagram
 """
 Simple test file to ensure quality in our Anagram() class
 """

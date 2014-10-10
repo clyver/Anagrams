@@ -23,13 +23,13 @@ class Anagram():
 			elem = ''.join(sorted(elem))
 			# add the elem to the list we will work with
 			molded_list.append(elem)
-		# Create a copy of our list so we can make comparisons 
-		copy_list = molded_list
+
+		# While we still have elements to match:
 		while molded_list:
 			# The element we will check for anagrams:
 			our_head = molded_list[0]
 			# The number of times the head occurs in our copy list:
-			occurrences = copy_list.count(our_head)
+			occurrences = molded_list.count(our_head)
 			
 			if occurrences > 1:
 				# If > 1, we have anagrams. Count em'!
